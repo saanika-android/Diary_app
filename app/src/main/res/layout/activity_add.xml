@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialogId"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="250dp"
+            android:text="Date"
+            android:textColor="#808080"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="#ED37A4" />
+        <EditText
+            android:id="@+id/subjectEditTextId"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPersonName"
+            android:background="@null"
+            android:hint="Subject"
+            android:layout_marginLeft="10dp"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+
+            android:background="#ED37A4" />
+
+
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="705dp">
+        <EditText
+            android:id="@+id/descriptionEditTextId"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:layout_height="700dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="start"
+            android:hint="Description" />
+        </ScrollView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="1dp"
+        android:layout_weight="2"
+        android:background="#ED37A4"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/saveButtonId"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="2"
+            android:background="@drawable/ic_baseline_save_24"
+            android:backgroundTint="#ffff" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="2"
+            android:onClick="getSpeechInput"
+            android:src="@drawable/ic_baseline_mic_24" />
+
+        <Button
+            android:id="@+id/shareButtonId"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="2"
+            android:background="@drawable/ic_baseline_share_24"
+            android:backgroundTint="#fff" />
+
+        <Button
+            android:id="@+id/cacelButtonId"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="2"
+            android:background="@drawable/ic_baseline_cancel_24"
+            android:backgroundTint="#fff" />
+    </LinearLayout>
+</RelativeLayout>

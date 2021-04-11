@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DiaryApp</string>
+    <string name="facebook_app_id">962782897552862</string>
+    <string name="fb_login_protocol_scheme">fb962782897552862</string>
+    <string name="cancel_login">Cancel Login</string>
+    <string name="error_login">Error while Login</string>
+    <string name="logout">Clear session</string>
+</resources>

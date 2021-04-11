@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:id="@+id/dialogId"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://schemas.android.com/apk/res/android ">
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:text="Date"
+        android:textColor="#808080"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:paddingLeft="300dp"
+        android:layout_marginTop="7dp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="35dp"
+
+        android:background="#ED37A4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/subjectEditTextId"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="Subject"
+            android:inputType="textPersonName"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="2dp"
+            android:maxLength="35" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="85dp"
+        android:background="#ED37A4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="38dp"
+        tools:ignore="MissingConstraints"
+        android:padding="10dp"
+        android:layout_marginTop="95dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/descriptionEditTextId"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+
+                android:gravity="start"
+                android:hint="Description"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="48dp"
+                android:scrollbars="vertical"
+                android:inputType="textMultiLine" />
+        </ScrollView>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ED37A4"
+        android:layout_marginTop="790dp">
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_baseline_cancel_24"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#fff"
+            android:layout_marginLeft="360dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/cacelButtonId" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ic_baseline_share_24"
+            android:id="@+id/shareButtonId"
+            android:backgroundTint="#fff" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_baseline_save_24"
+            android:backgroundTint="#ffff"
+            android:layout_marginTop="12dp"
+            android:id="@+id/saveButtonId"
+            android:layout_marginLeft="20dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="130dp"
+            android:src="@drawable/ic_baseline_mic_24"
+            android:layout_marginTop="12dp"
+            android:onClick="getSpeechInput" />
+    </RelativeLayout>
+</RelativeLayout>
